@@ -1,4 +1,4 @@
-# MakeMyNotes: AI-Powered EdTech Platform
+# makemynotes: AI-Powered EdTech Platform
 
 MakeMyNotes is an innovative EdTech platform designed to provide students with structured, high-quality study materials generated automatically from past exam papers and memos using advanced AI.
 
