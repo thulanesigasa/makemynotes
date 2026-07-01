@@ -6,22 +6,22 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: {
-    template: '%s | MakeMyNotes',
-    default: 'MakeMyNotes - AI Generated Study Notes',
+    template: '%s | makemynotes',
+    default: 'makemynotes - Automated Study Notes',
   },
-  description: 'AI-powered study notes generated automatically from past exam papers and memos.',
+  description: 'Automated study notes generated seamlessly from past exam papers and memos.',
   openGraph: {
-    title: 'MakeMyNotes - AI Generated Study Notes',
-    description: 'AI-powered study notes generated automatically from past exam papers and memos.',
+    title: 'makemynotes - Automated Study Notes',
+    description: 'Automated study notes generated seamlessly from past exam papers and memos.',
     url: 'https://makemynotes.com',
-    siteName: 'MakeMyNotes',
+    siteName: 'makemynotes',
     locale: 'en_ZA',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'MakeMyNotes - AI Generated Study Notes',
-    description: 'AI-powered study notes generated automatically from past exam papers and memos.',
+    title: 'makemynotes - Automated Study Notes',
+    description: 'Automated study notes generated seamlessly from past exam papers and memos.',
   },
   robots: {
     index: true,
