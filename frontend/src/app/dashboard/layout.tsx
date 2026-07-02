@@ -1,4 +1,7 @@
+"use client"
+
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { BookOpen, FilePlus, Settings, LogOut } from 'lucide-react'
 
 export default function DashboardLayout({
@@ -6,6 +9,8 @@ export default function DashboardLayout({
 }: {
   children: React.ReactNode
 }) {
+  const pathname = usePathname()
+
   return (
     <div className="min-h-screen bg-gray-50 flex">
       {/* Sidebar */}
@@ -16,15 +21,36 @@ export default function DashboardLayout({
           </Link>
         </div>
         <div className="flex-1 py-6 px-4 space-y-2">
-          <Link href="/dashboard" className="flex items-center gap-3 px-4 py-3 rounded-xl bg-orange-50 text-orange-600 font-medium transition-colors">
+          <Link 
+            href="/dashboard" 
+            className={`flex items-center gap-3 px-4 py-3 rounded-xl font-medium transition-colors ${
+              pathname === '/dashboard' 
+                ? 'bg-orange-50 text-orange-600' 
+                : 'text-black/70 hover:bg-black/5 hover:text-black'
+            }`}
+          >
             <BookOpen className="w-5 h-5" />
             My Notes
           </Link>
-          <Link href="/dashboard/new" className="flex items-center gap-3 px-4 py-3 rounded-xl text-black/70 hover:bg-black/5 hover:text-black font-medium transition-colors">
+          <Link 
+            href="/dashboard/new" 
+            className={`flex items-center gap-3 px-4 py-3 rounded-xl font-medium transition-colors ${
+              pathname === '/dashboard/new' 
+                ? 'bg-orange-50 text-orange-600' 
+                : 'text-black/70 hover:bg-black/5 hover:text-black'
+            }`}
+          >
             <FilePlus className="w-5 h-5" />
             Generate New
           </Link>
-          <Link href="/dashboard/settings" className="flex items-center gap-3 px-4 py-3 rounded-xl text-black/70 hover:bg-black/5 hover:text-black font-medium transition-colors">
+          <Link 
+            href="/dashboard/settings" 
+            className={`flex items-center gap-3 px-4 py-3 rounded-xl font-medium transition-colors ${
+              pathname === '/dashboard/settings' 
+                ? 'bg-orange-50 text-orange-600' 
+                : 'text-black/70 hover:bg-black/5 hover:text-black'
+            }`}
+          >
             <Settings className="w-5 h-5" />
             Settings
           </Link>

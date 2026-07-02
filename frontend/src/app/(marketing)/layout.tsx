@@ -1,6 +1,6 @@
 import { Navbar } from "@/components/Navbar"
 import { Footer } from "@/components/Footer"
-import { ScrollButtons } from "@/components/ScrollButtons"
+import ScrollButtons from "@/components/ScrollButtons"
 
 export default function MarketingLayout({
   children,

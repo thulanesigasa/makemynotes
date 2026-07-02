@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react'
 import { ArrowUp, ArrowDown } from 'lucide-react'
 
-export function ScrollButtons() {
+export default function ScrollButtons() {
   const [isNearBottom, setIsNearBottom] = useState(false)
   const [isScrollable, setIsScrollable] = useState(false)
 
