@@ -56,10 +56,13 @@ export default function DashboardLayout({
           </Link>
         </div>
         <div className="p-6 border-t border-black/10">
-          <button className="flex items-center gap-3 px-4 py-3 w-full rounded-xl text-black/70 hover:bg-red-50 hover:text-red-600 font-medium transition-colors">
+          <Link 
+            href="/"
+            className="flex items-center gap-3 px-4 py-3 w-full rounded-xl text-black/70 hover:bg-red-50 hover:text-red-600 font-medium transition-colors"
+          >
             <LogOut className="w-5 h-5" />
             Sign out
-          </button>
+          </Link>
         </div>
       </aside>
 
